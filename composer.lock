@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ee98c14e32bd69a8313027aec25b4338",
+    "hash": "9cddfff79ce1191f72a78a688b82f044",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -905,6 +905,48 @@
                 "psr-3"
             ],
             "time": "2013-04-23 10:09:48"
+        },
+        {
+            "name": "mustache/mustache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/mustache.php.git",
+                "reference": "v2.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/v2.4.0",
+                "reference": "v2.4.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mustache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "A Mustache implementation in PHP.",
+            "homepage": "https://github.com/bobthecow/mustache.php",
+            "keywords": [
+                "mustache",
+                "templating"
+            ],
+            "time": "2013-07-18 05:23:52"
         },
         {
             "name": "nesbot/carbon",
@@ -1939,6 +1981,95 @@
                 "css"
             ],
             "time": "2013-07-31 19:36:59"
+        },
+        {
+            "name": "way/generators",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JeffreyWay/Laravel-4-Generators.git",
+                "reference": "a3f04429f40664c847a370e7974fa5577e16444d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/a3f04429f40664c847a370e7974fa5577e16444d",
+                "reference": "a3f04429f40664c847a370e7974fa5577e16444d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "4.0.x",
+                "illuminate/filesystem": "4.0.x",
+                "illuminate/support": "4.0.x",
+                "mustache/mustache": "dev-master",
+                "php": ">=5.3.0",
+                "way/laravel-test-helpers": "dev-master"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Way\\Generators": "src/"
+                },
+                "classmap": [
+                    "src/Way/Generators/Generators"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@jeffrey-way.com",
+                    "homepage": "http://jeffrye-way.com",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2013-08-05 18:33:31"
+        },
+        {
+            "name": "way/laravel-test-helpers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JeffreyWay/Laravel-Test-Helpers.git",
+                "reference": "0c0018f5826a15a574ec79149ba98a47262cd89d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JeffreyWay/Laravel-Test-Helpers/zipball/0c0018f5826a15a574ec79149ba98a47262cd89d",
+                "reference": "0c0018f5826a15a574ec79149ba98a47262cd89d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "illuminate/support": "4.0.x",
+                "mockery/mockery": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Way\\Tests": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@jeffrey-way.com",
+                    "homepage": "http://jeffrye-way.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easier testing in Laravel.",
+            "time": "2013-07-29 14:31:52"
         }
     ],
     "packages-dev": [
@@ -1950,7 +2081,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "twitter/bootstrap": 20,
-        "components/jquery": 20
+        "components/jquery": 20,
+        "way/generators": 20
     },
     "platform": [
 
